@@ -1,0 +1,107 @@
+body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        margin: 0;
+        background: #eef2f7;
+        color: #222;
+    }
+    .container {
+        max-width: 900px;
+        margin: 40px auto;
+        background: #fff;
+        padding: 40px 32px;
+        border-radius: 12px;
+        box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+        border-left: 6px solid #fbaa7e;
+    }
+    header {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    header h1 {
+        color: #65f3f1;
+        font-size: 2.7rem;
+        margin-bottom: 8px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    header p {
+        font-size: 1.1rem;
+        color: #555;
+        margin-bottom: 0;
+        letter-spacing: 1px;
+    }
+    .contact span {
+        margin: 0 10px;
+        color: #444;
+    }
+    .section {
+        margin-bottom: 32px;
+    }
+    h2, h3, h4, h5 {
+        color: #25e8de;
+        margin-bottom: 14px;
+        font-weight: 600;
+        border-bottom: 2px solid #fbaa7e22;
+        padding-bottom: 4px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    ul {
+        padding-left: 20px;
+        margin: 0;
+    }
+    li {
+        margin-bottom: 16px;
+        line-height: 1.7;
+    }
+    strong {
+        color: #e67e22;
+        font-weight: 600;
+    }
+    .project, .certification, .education, .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    .project li, .certification li, .education li, .skills li {
+        background: #fbaa7e11;
+        border-radius: 8px;
+        padding: 16px 20px;
+        flex: 1 1 350px;
+        box-sizing: border-box;
+        margin-bottom: 0;
+        border-left: 3px solid #fbaa7e;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        transition: box-shadow 0.2s;
+    }
+    .project li:hover, .certification li:hover, .education li:hover, .skills li:hover {
+        box-shadow: 0 4px 16px rgba(251,170,126,0.12);
+    }
+    .project li ul, .project li p {
+        margin-top: 8px;
+        margin-bottom: 0;
+    }
+    .project li ul {
+        padding-left: 18px;
+    }
+    .skills li {
+        font-size: 1.05rem;
+    }
+    .section p {
+        font-size: 1.08rem;
+        color: #333;
+        margin-bottom: 0;
+    }
+    @media (max-width: 700px) {
+        .container {
+            padding: 18px 6px;
+        }
+        header h1 {
+            font-size: 1.5rem;
+        }
+        .project li, .certification li, .education li, .skills li {
+            flex: 1 1 100%;
+            padding: 10px 8px;
+        }
+    }
